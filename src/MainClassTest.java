@@ -9,4 +9,14 @@ public class MainClassTest {
 
         Assert.assertEquals("getLocalNumber return not a 14", 14, mainClass.getLocalNumber());
     }
+
+    @Test
+    public void testGetClassString() {
+        MainClass mainClass = new MainClass();
+        boolean result;
+        if (mainClass.getClassString().contains("hello") || mainClass.getClassString().contains("Hello")) result = true;
+        else result = false;
+
+        Assert.assertTrue("class_string does not contain the 'hello' or 'Hello'", result);
+    }
 }
