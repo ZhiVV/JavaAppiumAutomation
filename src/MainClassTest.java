@@ -11,6 +11,13 @@ public class MainClassTest {
     }
 
     @Test
+    public void testGetClassNumber() {
+        MainClass mainClass = new MainClass();
+
+        Assert.assertTrue("getClassNumber return Integer less 46", mainClass.getClassNumber() > 45);
+    }
+
+    @Test
     public void testGetClassString() {
         MainClass mainClass = new MainClass();
         boolean result;
